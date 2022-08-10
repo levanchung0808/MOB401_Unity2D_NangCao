@@ -102,6 +102,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   projectileSpeed: 20
   impactEffect: {fileID: 7026829377818496550, guid: 7f0bfc0900982934db62f8fb3d58a648, type: 3}
+  enemyScript: {fileID: 0}
+  playerScript: {fileID: 0}
 --- !u!95 &2200909919320505182
 Animator:
   serializedVersion: 4

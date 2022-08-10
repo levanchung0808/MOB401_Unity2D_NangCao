@@ -30,7 +30,34 @@ public class HttpPortal
 
             if (www.result != UnityWebRequest.Result.Success)
             {
-                Debug.LogError($"Failed: {www.error}");
+                /*Debug.LogError($"Failed: {www.error}");*/
+                return default;
+            }
+
+            var result = _serialization.Deserialize<TResultType>(www.downloadHandler.text);
+            return result;
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError($"{nameof(Get)} failed: {ex.Message}");
+            return default;
+        }
+    }
+
+    public async Task<TResultType> GetAPI<TResultType>(string url)
+    {
+        try
+        {
+            using var www = UnityWebRequest.Get(url);
+            www.SetRequestHeader("Authorization", "Bearer " + Storage.Instance.token);
+            var operation = www.SendWebRequest();
+            while (!operation.isDone)
+                await Task.Yield();
+
+            if (www.result != UnityWebRequest.Result.Success)
+            {
+                /*Debug.LogError($"Failed: {www.error}");*/
+                /*ShowMessage("Login failed");*/
                 return default;
             }
 
@@ -57,11 +84,39 @@ public class HttpPortal
 
             if (www.result != UnityWebRequest.Result.Success)
             {
-                ShowMessage("Email or Password is incorrect!");
-                Debug.LogError($"Login Failed: {www.error}");
+                /*ShowMessage("Login failed");*/
+                /*Debug.LogError($"Login Failed: {www.error}");*/
                 return default;
             }
             var result = _serialization.Deserialize<TResultType>(www.downloadHandler.text);
+            return result;
+        }
+        catch (Exception ex)
+        {
+            Debug.LogError($"{nameof(Post)} failed: {ex.Message}");
+            return default;
+        }
+    }
+
+    public async Task<TResultType> PostAPI<TResultType>(string url, WWWForm form)
+    {
+        try
+        {
+            using var www = UnityWebRequest.Post(url, form);
+            www.SetRequestHeader("Content-Type", _serialization.ContentType);
+            var operation = www.SendWebRequest();
+
+            while (!operation.isDone)
+                await Task.Yield();
+
+            if (www.result != UnityWebRequest.Result.Success)
+            {
+                /*ShowMessage("Login failed");*/
+                /*Debug.LogError($"Login Failed: {www.error}");*/
+                return default;
+            }
+            var result = _serialization.Deserialize<TResultType>(www.downloadHandler.text);
+            Debug.Log(result);
             return result;
         }
         catch (Exception ex)

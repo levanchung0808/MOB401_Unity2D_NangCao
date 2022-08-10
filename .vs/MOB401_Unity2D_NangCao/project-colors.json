@@ -5,7 +5,22 @@
       "ProjectGuid": "a5c827fd-5d06-ea28-bbff-e5f7d3e09e2a",
       "DisplayName": "Assembly-CSharp",
       "ColorIndex": 0
+    },
+    "6ddb0234-8765-6ede-45a8-7487608a1924": {
+      "ProjectGuid": "6ddb0234-8765-6ede-45a8-7487608a1924",
+      "DisplayName": "Assembly-CSharp-Editor",
+      "ColorIndex": 1
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    },
+    "0196d624-44d5-21e1-5f38-1cdd3c93c47e": {
+      "ProjectGuid": "0196d624-44d5-21e1-5f38-1cdd3c93c47e",
+      "DisplayName": "AstarPathfindingProject",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 1
+  "NextColorIndex": 3
 }

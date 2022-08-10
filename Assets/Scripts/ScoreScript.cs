@@ -12,7 +12,6 @@ public class ScoreScript : MonoBehaviour
     void Start()
     {
         txtCoin = GetComponent<TextMeshProUGUI>();
-        coin = 00;
     }
 
     // Update is called once per frame

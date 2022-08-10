@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEditor;
 using UnityEngine;
-
+using UnityEngine.UI;
 public class EnemyScript : MonoBehaviour
 {
     private Rigidbody2D r2d;
@@ -13,13 +13,23 @@ public class EnemyScript : MonoBehaviour
 
     public MyEnum SelectEnemy = new MyEnum();
 
-
     private Transform player;
+
+    public int maxHealthEnemy = 100;
+    public int currentHealthEnemy;
+    public HealthBar healthBarEnemy;
+    public float attackSpeed = 0.1f;
+    public float canAttack;
+
     // Start is called before the first frame update
     void Start()
     {
+       
         r2d = GetComponent<Rigidbody2D>();
         player = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+        currentHealthEnemy = maxHealthEnemy;
+        healthBarEnemy.SetMaxHealthEnemy(maxHealthEnemy);
+
     }
 
     // Update is called once per frame
@@ -110,6 +120,12 @@ public class EnemyScript : MonoBehaviour
             }
         }
 
+    }
+
+    public void TakeDame(int dame)
+    {
+        currentHealthEnemy -= dame;
+        healthBarEnemy.SetHealthEnemy(currentHealthEnemy);
     }
 }
 

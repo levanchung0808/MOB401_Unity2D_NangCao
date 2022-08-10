@@ -62,22 +62,36 @@
     <Compile Include="Assets\Scripts\PlayerAttack.cs" />
     <Compile Include="Assets\Scripts\Serialization.cs" />
     <Compile Include="Assets\Scripts\Data.cs" />
+    <Compile Include="Assets\Scripts\UserInfo.cs" />
     <Compile Include="Assets\Scripts\PauseMenu.cs" />
     <Compile Include="Assets\Scripts\MenuScript.cs" />
+    <Compile Include="Assets\Scripts\LoadAPI.cs" />
     <Compile Include="Assets\Scripts\PlayerScript.cs" />
+    <Compile Include="Assets\Scripts\Result.cs" />
     <Compile Include="Assets\Scripts\RemoveEffect.cs" />
     <Compile Include="Assets\Scripts\ISerialization.cs" />
     <Compile Include="Assets\Scripts\GroundCheck.cs" />
+    <Compile Include="Assets\Scripts\Billboard.cs" />
     <Compile Include="Assets\Scripts\CameraScript.cs" />
+    <Compile Include="Assets\Scripts\HealthBar.cs" />
+    <Compile Include="Assets\Scripts\DiamondScript.cs" />
     <Compile Include="Assets\Toast UI\Scripts\Toast.cs" />
     <Compile Include="Assets\Scripts\Storage.cs" />
     <Compile Include="Assets\Scripts\Response.cs" />
     <Compile Include="Assets\Scripts\EnemyScript.cs" />
     <Compile Include="Assets\Scripts\HttpPortal.cs" />
+    <Compile Include="Assets\Scripts\HealthBarEnemy.cs" />
     <Compile Include="Assets\Toast UI\Scripts\ToastUI.cs" />
     <Compile Include="Assets\Scripts\Projectile.cs" />
     <Compile Include="Assets\Scripts\BreakBlock.cs" />
     <Compile Include="Assets\Scripts\Background_Infinity.cs" />
+    <Compile Include="Assets\Scripts\EnemyGFX.cs" />
+    <Compile Include="Assets\Scripts\EnemyAI.cs" />
+    <Compile Include="Assets\Scripts\MenuMainScript.cs" />
+    <Compile Include="Assets\Scripts\Character.cs" />
+    <Compile Include="Assets\Scripts\TimeManager.cs" />
+    <Compile Include="Assets\Scripts\ProjectileEnemy.cs" />
+    <Compile Include="Assets\Scripts\EnemyAttack.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
@@ -369,6 +383,9 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.nuget.newtonsoft-json@3.0.2\Runtime\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Pathfinding.Ionic.Zip.Reduced">
+      <HintPath>Assets\AstarPathfindingProject\Plugins\DotNetZip\Pathfinding.Ionic.Zip.Reduced.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Android.Types">
       <HintPath>C:\Program Files\Unity\Hub\Editor\2021.3.2f1\Editor\Data\PlaybackEngines\AndroidPlayer\Unity.Android.Types.dll</HintPath>
@@ -889,6 +906,18 @@
     <ProjectReference Include="DevionGames.UIWidgets.csproj">
       <Project>{CAB08491-4EDE-167C-BB4F-157C5C9707E0}</Project>
       <Name>DevionGames.UIWidgets</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProjectEditor.csproj">
+      <Project>{409B44FA-3152-A01C-A5FC-2752C4D3C3D0}</Project>
+      <Name>AstarPathfindingProjectEditor</Name>
+    </ProjectReference>
+    <ProjectReference Include="AstarPathfindingProject.csproj">
+      <Project>{0196D624-44D5-21E1-5F38-1CDD3C93C47E}</Project>
+      <Name>AstarPathfindingProject</Name>
+    </ProjectReference>
+    <ProjectReference Include="PackageToolsEditor.csproj">
+      <Project>{44AB231C-212C-4378-3882-FE965576EC50}</Project>
+      <Name>PackageToolsEditor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

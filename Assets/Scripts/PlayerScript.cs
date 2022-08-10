@@ -1,10 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using System.Threading.Tasks;
+using UnityEngine.Networking;
+using System.Net.Http;
+using System.Net.Http.Headers;
+using TMPro;
 
 public class PlayerScript : MonoBehaviour
 {
-    private Animator HanhDong;
+    Animator HanhDong;
     private Rigidbody2D r2d;
     public static AudioSource AmThanh;
 
@@ -21,9 +27,19 @@ public class PlayerScript : MonoBehaviour
 
     public static bool checkPauseVolume = false;
 
+    public float maxHealth = 1f;
+    public float currentHealth;
+    public HealthBar healthBar;
+
+    public float attackSpeed = 0.5f;
+    public float canAttack;
+
+    public GameObject objGameOverScreen;
+    public TextMeshProUGUI txtTextTitle, txtScore;
     // Start is called before the first frame update
     void Start()
     {
+        Time.timeScale = 1f;
         r2d = GetComponent<Rigidbody2D>();
         HanhDong = GetComponent<Animator>();
         AmThanh = GetComponent<AudioSource>();
@@ -31,6 +47,9 @@ public class PlayerScript : MonoBehaviour
         RuongVang1.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.3f);
         RuongVang2.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.3f);
         RuongVang3.GetComponent<SpriteRenderer>().color = new Color(1f, 1f, 1f, 0.3f);
+
+        currentHealth = maxHealth;
+        healthBar.SetHealth(maxHealth);
     }
 
     // Update is called once per frame
@@ -52,6 +71,18 @@ public class PlayerScript : MonoBehaviour
             {
                 AmThanh.UnPause();
             }
+        }
+
+        //save sate
+        if (Input.GetKeyDown(KeyCode.S))
+        {
+            SaveState("Level 2", transform.localPosition.x.ToString(), transform.localPosition.y.ToString());
+        }
+
+        //save score
+        if (Input.GetKeyDown(KeyCode.G))
+        {
+            SaveScore(100);
         }
     }
 
@@ -87,8 +118,6 @@ public class PlayerScript : MonoBehaviour
             r2d.AddForce((Vector2.up) * NhayCao);
             TaoAmThanh("nhay");
             DuoiDat = false;
-            /*TaoAmThanh("smb_jump-super");*/
-
         }
         //áp dụng lực hút trái đất để Mario rơi xuống nhanh hơn
         if (r2d.velocity.y < 0)
@@ -123,6 +152,14 @@ public class PlayerScript : MonoBehaviour
                 Destroy(collision.gameObject);
                 TaoAmThanh("DapDau");
             }
+        }
+
+        if (collision.gameObject.tag == "Wingame")
+        {
+            Time.timeScale = 0;
+            TaoAmThanh("wingame");
+            SaveScore(ScoreScript.coin);
+            SceneManager.LoadScene("Level_2");
         }
     }
 
@@ -160,5 +197,97 @@ public class PlayerScript : MonoBehaviour
     {
         //lấy path resources
         AmThanh.PlayOneShot(Resources.Load<AudioClip>("Audio/" + fileAmThanh));
+    }
+
+    public void TakeDame(float dame)
+    {
+        if (currentHealth == 0 || currentHealth < 0)
+        {
+            LoseGame();
+            HanhDong.SetBool("Chet", true);
+            TaoAmThanh("chet");
+            currentHealth = 0;
+        }
+        currentHealth -= dame;
+        healthBar.SetHealth(currentHealth);
+        
+    }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "BOSS")
+        {
+            if (attackSpeed <= canAttack)
+            {
+                if (currentHealth <= 0)
+                {
+                    LoseGame();
+                    HanhDong.SetBool("Chet", true);
+                    TaoAmThanh("chet");
+                    currentHealth = 0;
+                }
+                TakeDame(0.1f);
+                canAttack = 0f;
+            }
+            else
+            {
+                canAttack += Time.deltaTime;
+            }
+        }
+    }
+
+    public async void SaveState(string name, string posX, string posY)
+    {
+        string url = "https://mob401laptrinhservernodejs.herokuapp.com/api/save-state";
+        WWWForm form = new WWWForm();
+        form.AddField("name", name);
+        form.AddField("posX", posX);
+        form.AddField("posY", posY);
+
+        var httpClient = new HttpPortal(new Serialization());
+        var result = await httpClient.Post<Response>(url, form);
+        if (result != null)
+        {
+            Debug.Log("SAVE STATE SUCCESS");
+        }
+    }
+
+    public async void SaveScore(int score)
+    {
+        string url = "http://localhost:3000/api/save-score";
+        WWWForm form = new WWWForm();
+        form.AddField("username", MenuScript.tk);
+        form.AddField("score", score);
+        Debug.Log("SCORE: "+score + " tk:"+ MenuScript.tk);
+
+        var httpClient = new HttpPortal(new Serialization());
+        var result = await httpClient.Post<Result>(url, form);
+        Debug.Log(result);
+        if (result != null)
+        {
+            Debug.Log("SCORE PLAYER" + result.user);
+            Debug.Log("SAVE SCORE SUCCESS");
+        }
+    }
+
+    public void LoseGame()
+    {
+        txtTextTitle.text = "GAME OVERRRRRR";
+        txtScore.text = ScoreScript.coin.ToString();
+        objGameOverScreen.SetActive(true);
+        Time.timeScale = 0;
+        Debug.Log("FINAL COIN END GAME: "+DiamondScript.diamond);
+        Debug.Log("FINAL score END GAME" + ScoreScript.coin);
+        SaveScore(ScoreScript.coin);
+    }
+
+    public void WinGame()
+    {
+        txtTextTitle.text = "YOU WIN";
+        txtScore.text = ScoreScript.coin.ToString();
+        PlayerScript.TaoAmThanh("wingame");
+        objGameOverScreen.SetActive(true);
+        Time.timeScale = 0;
+        SaveScore(ScoreScript.coin);
     }
 }

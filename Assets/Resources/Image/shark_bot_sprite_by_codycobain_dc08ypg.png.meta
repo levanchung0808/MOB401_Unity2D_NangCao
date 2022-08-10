@@ -1,0 +1,696 @@
+fileFormatVersion: 2
+guid: fba353307bb91624caf27aacd23031ac
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: shark_bot_sprite_by_codycobain_dc08ypg_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 789
+        width: 368
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5152f33ac1c65394bbe9564a99b5805a
+      internalID: -1747964045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shark_bot_sprite_by_codycobain_dc08ypg_1
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 789
+        width: 316
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b534a11827b58734b94c239eca7cb4ac
+      internalID: 1048989126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shark_bot_sprite_by_codycobain_dc08ypg_2
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 789
+        width: 348
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4778e9d0a218870448745f9736d24f41
+      internalID: -1105570519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shark_bot_sprite_by_codycobain_dc08ypg_3
+      rect:
+        serializedVersion: 2
+        x: 1151
+        y: 779
+        width: 337
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0bfa2b41d9578b47b83689c3d08dbd7
+      internalID: 959714197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shark_bot_sprite_by_codycobain_dc08ypg_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 647
+        width: 348
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b397d5dbb413c6344b97018556c3112a
+      internalID: 1363968181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shark_bot_sprite_by_codycobain_dc08ypg_5
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 637
+        width: 337
+        height: 141
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e87ef8db48035649ba279e04ab3aaf6
+      internalID: -2132612422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shark_bot_sprite_by_codycobain_dc08ypg_6
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 647
+        width: 368
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f4a87eee4f4e644a41202f9d72abc8
+      internalID: 1725215249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shark_bot_sprite_by_codycobain_dc08ypg_7
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 445
+        width: 157
+        height: 326
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90be49945f7f01842b9c4a015861159b
+      internalID: 842380431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shark_bot_sprite_by_codycobain_dc08ypg_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 505
+        width: 368
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 985ffbf2bbf7a3c408b4f886f931eb67
+      internalID: 270548193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shark_bot_sprite_by_codycobain_dc08ypg_9
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 505
+        width: 368
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8e0bcde5b0f5864db2b54c84f26d06c
+      internalID: 852649226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shark_bot_sprite_by_codycobain_dc08ypg_10
+      rect:
+        serializedVersion: 2
+        x: 763
+        y: 505
+        width: 316
+        height: 121
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fca3ccb767e88547988f623982f7dc0
+      internalID: 737334472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shark_bot_sprite_by_codycobain_dc08ypg_11
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 461
+        width: 41
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c408f3d18cfd9843b8d55a5d696e2be
+      internalID: -1224333091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shark_bot_sprite_by_codycobain_dc08ypg_12
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 461
+        width: 38
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 492d5b2105da488469112c47fb86ad27
+      internalID: -1720017259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shark_bot_sprite_by_codycobain_dc08ypg_13
+      rect:
+        serializedVersion: 2
+        x: 778
+        y: 363
+        width: 368
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f2d1933c57d8cf4bb161060383ab3bb
+      internalID: 1610375625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shark_bot_sprite_by_codycobain_dc08ypg_14
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 338
+        width: 368
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e29e73b2b6b395e4784400282720feda
+      internalID: -542759436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shark_bot_sprite_by_codycobain_dc08ypg_15
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 338
+        width: 368
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a40d937b123a3e44b5f7f31e77c39d0
+      internalID: -66316801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shark_bot_sprite_by_codycobain_dc08ypg_16
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 57
+        width: 161
+        height: 288
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae98d58090c5d9a4a86a5a0916818f16
+      internalID: 1819905088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shark_bot_sprite_by_codycobain_dc08ypg_17
+      rect:
+        serializedVersion: 2
+        x: 1005
+        y: 29
+        width: 149
+        height: 316
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b30513ed2913e1a49988adcdcd68a340
+      internalID: 1392773900
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shark_bot_sprite_by_codycobain_dc08ypg_18
+      rect:
+        serializedVersion: 2
+        x: 1216
+        y: 149
+        width: 176
+        height: 287
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb32e8f5c78ed61449141c0f30b4a6bc
+      internalID: -1885982003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shark_bot_sprite_by_codycobain_dc08ypg_19
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 208
+        width: 368
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd4732fbaf217c49805d88e2d7fb34c
+      internalID: -289416808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shark_bot_sprite_by_codycobain_dc08ypg_20
+      rect:
+        serializedVersion: 2
+        x: 393
+        y: 208
+        width: 332
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a904b372b7693941bed25e5088a58f0
+      internalID: -1296493894
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shark_bot_sprite_by_codycobain_dc08ypg_21
+      rect:
+        serializedVersion: 2
+        x: 4
+        y: 78
+        width: 348
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b579100b5a76a464199f18517eb0a55e
+      internalID: -1417614880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shark_bot_sprite_by_codycobain_dc08ypg_22
+      rect:
+        serializedVersion: 2
+        x: 389
+        y: 68
+        width: 368
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a819b79adb2cfe04b9e6f66c65992de1
+      internalID: -311653666
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shark_bot_sprite_by_codycobain_dc08ypg_23
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 36
+        width: 41
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 163c0aa1b0f7a8e44a2e6920fa82e658
+      internalID: -1825259347
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: shark_bot_sprite_by_codycobain_dc08ypg_24
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 1
+        width: 38
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2b1fde517beb6c4ba59e8ded93a2555
+      internalID: -1578103481
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      shark_bot_sprite_by_codycobain_dc08ypg_8: 270548193
+      shark_bot_sprite_by_codycobain_dc08ypg_23: -1825259347
+      shark_bot_sprite_by_codycobain_dc08ypg_4: 1363968181
+      shark_bot_sprite_by_codycobain_dc08ypg_0: -1747964045
+      shark_bot_sprite_by_codycobain_dc08ypg_19: -289416808
+      shark_bot_sprite_by_codycobain_dc08ypg_5: -2132612422
+      shark_bot_sprite_by_codycobain_dc08ypg_2: -1105570519
+      shark_bot_sprite_by_codycobain_dc08ypg_6: 1725215249
+      shark_bot_sprite_by_codycobain_dc08ypg_9: 852649226
+      shark_bot_sprite_by_codycobain_dc08ypg_10: 737334472
+      shark_bot_sprite_by_codycobain_dc08ypg_24: -1578103481
+      shark_bot_sprite_by_codycobain_dc08ypg_16: 1819905088
+      shark_bot_sprite_by_codycobain_dc08ypg_21: -1417614880
+      shark_bot_sprite_by_codycobain_dc08ypg_17: 1392773900
+      shark_bot_sprite_by_codycobain_dc08ypg_3: 959714197
+      shark_bot_sprite_by_codycobain_dc08ypg_14: -542759436
+      shark_bot_sprite_by_codycobain_dc08ypg_11: -1224333091
+      shark_bot_sprite_by_codycobain_dc08ypg_12: -1720017259
+      shark_bot_sprite_by_codycobain_dc08ypg_13: 1610375625
+      shark_bot_sprite_by_codycobain_dc08ypg_20: -1296493894
+      shark_bot_sprite_by_codycobain_dc08ypg_1: 1048989126
+      shark_bot_sprite_by_codycobain_dc08ypg_7: 842380431
+      shark_bot_sprite_by_codycobain_dc08ypg_22: -311653666
+      shark_bot_sprite_by_codycobain_dc08ypg_15: -66316801
+      shark_bot_sprite_by_codycobain_dc08ypg_18: -1885982003
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
