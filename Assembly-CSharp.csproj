@@ -92,7 +92,10 @@
     <Compile Include="Assets\Scripts\Projectile.cs" />
     <Compile Include="Assets\Scripts\BreakBlock.cs" />
     <Compile Include="Assets\Scripts\Background_Infinity.cs" />
-    <Compile Include="Assets\BVASM.cs" />
+    <Compile Include="Assets\Scripts\BVASM.cs" />
+    <Compile Include="Assets\Scripts\ASM_DIChuyenPlayer.cs" />
+    <Compile Include="Assets\Scripts\ASM_EnemyScript.cs" />
+    <Compile Include="Assets\Scripts\SpawnRandomPrefabs.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
