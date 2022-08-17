@@ -13,6 +13,7 @@ TagManager:
   - Fireball
   - Wingame
   - BOSS
+  - Enemy
   layers:
   - Default
   - TransparentFX
